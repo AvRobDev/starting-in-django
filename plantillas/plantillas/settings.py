@@ -51,10 +51,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'plantillas.urls'
 
+#Dentro de esta configuracion le indicamos a django donde se encuentran nuestras plantillas(templates)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
